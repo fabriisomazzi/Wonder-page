@@ -1,0 +1,259 @@
+/* Animaciones generales */
+html {
+    scroll-padding-top: 60px; /* Ajusta este valor según la altura de tu navbar */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que la navbar quede encima de otros elementos */
+    padding-top: 10px; /* Ajuste para evitar que tape el contenido */
+}
+
+nav {
+    background-color: #e5be03;
+}
+
+.nav-link {
+    color: black; /* Establece el color de las letras en negro */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: 700; /* Negrita, opcional */
+    color: #000000; /* Color amarillo similar al de la imagen */
+}
+
+.logo-img {
+    height: 40px; /* Ajusta la altura del logo */
+    margin-right: 10px; /* Espaciado entre el logo y el texto */
+    vertical-align: middle; /* Centra el logo verticalmente con el texto */
+}
+
+/* Fondo del header con filtro gris */
+header {
+    filter: grayscale(0%);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* La altura del header será igual a la ventana del navegador */
+    color: white; /* Asegúrate de que el texto sea visible sobre la imagen */
+    display: flex; /* Para centrar el contenido */
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    position: relative; /* Necesario para el filtro */
+}
+
+/* Estilos de los textos dentro del header */
+header h1, header p, header a {
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra suave para el texto */
+    font-weight: 700; /* Negrita, opcional */
+}
+
+header h1 {
+    animation-delay: 0.5s;
+    color: #e5be03;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+}
+
+header img {
+    animation-delay: 0.5s;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+}
+
+header p {
+    animation-delay: 1s;
+    color: #e5be03;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+}
+
+header a {
+    animation-delay: 1.5s;
+}
+
+/* Keyframes personalizados */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Hover para efectos visuales en las cartas del menú */
+.card-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo para la imagen de fondo */
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/fondo-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px); /* Aplica filtro gris y desenfoque */
+    z-index: -1; /* Asegura que la imagen no cubra el contenido */
+}
+
+
+/* Estilos para el botón y la imagen en el header */
+header a {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: #f4c542;
+    color: #000;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+header a:hover {
+    background-color: #e5be03; /* Color al pasar el cursor */
+    color: #fff; /* Texto en blanco al hacer hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Efecto de sombra */
+}
+
+
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+    height: 400px; /* Ajusta la altura de todas las imágenes */
+    object-fit: cover; /* Hace que la imagen cubra el área sin distorsionarse */
+}
+
+.py-5 {
+    background-color: rgb(255, 193, 7);
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta la imagen al 100% del contenedor */
+    height: 300px; /* Establece una altura constante para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen sin distorsión */
+}
+
+.card-body {
+    height: 200px; /* Fija una altura consistente para los cuadros de texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Agrega esto en tu archivo CSS */
+.sobre-nosotros {
+    filter: grayscale(0%) ;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 50px 0; /* Agregar un poco de espacio alrededor */
+    color: white; /* Cambiar el color del texto principal */
+}
+
+.nosotros-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/local.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px); /* Aplica filtro gris y desenfoque */
+    z-index: -1; /* Asegura que la imagen no cubra el contenido */
+}
+
+/* Cambiar la fuente y el color del título */
+.sobre-nosotros h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #f4c542; /* Color del texto */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra suave para el texto */
+    margin-bottom: 20px;
+}
+
+/* Cambiar la fuente y el color de los párrafos */
+.sobre-nosotros p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* Tamaño de la fuente */
+    line-height: 1.6; /* Espaciado entre líneas */
+    color: #f4c542; /* Color de los párrafos */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra suave para el texto */
+}
+
+/* Estilo de la sección con animación */
+.sobre-nosotros h2.animate__fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contacto {
+    background-image: url('../images/fondo-formulario.jpg');
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 55vh; /* Hace que el contenedor tenga una altura de pantalla completa (ajústalo si es necesario) */
+    
+}
+
+
+.contacto h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Negrita, opcional */
+    font-size: 36px; /* Tamaño de la fuente */
+    color: #f4c542; /* Color del texto */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Sombra suave para el texto */
+    margin-bottom: 20px;
+}
+
+.franquicias h2 p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-weight: 700; /* Negrita, opcional */
+    font-size: 46px; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+    margin-bottom: 20px;
+}
+
+footer p {
+    padding-top: 20px;
+
+}

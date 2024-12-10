@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WONDER</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos personalizados -->
+    <link href="./css/styles.css" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#" aria-label="Inicio">
+                <img src="./images/logo.png" alt="Logo de Hamburguesería Moderna" class="logo-img">
+                WONDER
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#franquicias">Franquicias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+<section id="inicio">
+    <header class="text-center header-animate">
+        <div class="header-background"></div>
+        <h1 class="display-4 animate__animated animate__fadeInDown">¡Las Mejores Hamburguesas de Córdoba!</h1>
+        <p class="lead animate__animated animate__fadeInUp animate__delay-1s"> Disfruta de sabores únicos</span> </p>
+        
+        <a href="#menu" class="btn btn-warning  animate__animated animate__zoomIn animate__delay-1s">Ver Menú</a>
+    </header>
+</section>
+
+    <!-- Menú -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Nuestro Menú</h2>
+            <div id="menuCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Primer Item -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/Wonder Pulled Pork.jpg" class="card-img-top" alt="Wonder Pulled Pork">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder Pulled Pork</h5>
+                                        <p class="card-text">pan de papa, abundante pulled pork, mayonesa, lechuga, tomate, papas fritas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/Wonder Roquefort.jpg" class="card-img-top" alt="Wonder Roquefort">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder Roquefort</h5>
+                                        <p class="card-text">pan de papa, Doble medallon de 100g, queso roquefort, jamon crudo, cebolla morada, mayonesa, papas fritas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/Wonder Vacío Desmenuzado.jpg" class="card-img-top" alt="Wonder Vacío Desmenuzado">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder Vacío Desmenuzado</h5>
+                                        <p class="card-text">pan de papa, medallón de 100g, cheddar, bacon, salsa wonder, vacío desmenuzado, papas fritas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Segundo Item -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/WONDER 4 FORMAGGI.jpg" class="card-img-top" alt="Otro Plato">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder 4 Formaggi</h5>
+                                        <p class="card-text">Pan de papa, Doble Medallon 100gr, Queso Cheddar, Queso Tybo, Queso Roquefort, Queso Reggiano, Papas Fritas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/Wonder Onion BBQ.jpg" class="card-img-top" alt="Otro Plato 2">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder Onion BBQ</h5>
+                                        <p class="card-text">Pan de papa, Doble Medallon 100gr, Queso Cheddar, Bacon, Barbacoa, Aros de Cebolla, Papas Fritas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card card-hover">
+                                    <img src="./images/WONDER FULL BACON.jpg" class="card-img-top" alt="Otro Plato 3">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Wonder Full Bacon</h5>
+                                        <p class="card-text">Pan de papa, Doble Medallon 100gr, Extra Bacon Ahumado, Extra Bacon Triturado, Cheddar Melt, Cheddar, Barbacoa, Papas Fritas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Puedes agregar más items aquí -->
+                </div>
+                <!-- Flechas de navegación -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev" style="z-index: 5;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next" style="z-index: 5;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="sobre-nosotros" id="nosotros">
+        <div class="container">
+            <div class="nosotros-background"></div>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="mb-4 animate__animated animate__fadeInUp">Sobre Nosotros</h2>
+                        <p class="lead">Un xx de febrero de xxxx, decidimos darle vida a Wonder.</p>
+                        <p>La idea surge ante la necesidad de comer una buena hamburguesa...</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum est 
+                            impedit doloremque nobis incidunt voluptate commodi, magni aperiam 
+                            in perspiciatis sit eius, qui ducimus reprehenderit hic dolorem 
+                            voluptatibus autem laborum..</p>
+                        <p>Como dice nuestro lema, en Wonder hacemos <strong>HAMBURGUESAS DE VERDAD</strong></p>
+                    </div>
+                <div class="col-md-6">
+                    <!-- Puedes agregar una imagen aquí si lo deseas -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franquicias -->
+    <section class="franquicias bg-warning text-center py-5" id="franquicias">
+        <div class="franquicias">
+            <h2 class="mb-4">¿Qué esperas para abrir tu franquicia?</h2>
+            <p class="lead mb-4">Si sos un apasionado por las hamburguesas y queres unirte a nuestra familia, ¡este es el momento perfecto! Wonder te ofrece una oportunidad única para emprender y formar parte de nuestro éxito.</p>
+            <a href="https://drive.google.com/file/d/1ySjk8PNREp_ztcpQiDvBvxinCaCNPHp-/view?fbclid=PAZXh0bgNhZW0CMTEAAaZdPQCtOEfDIY6r634gG1FY2c0EGj9Cwq6rNbAeWOG0q4oHbB75PaaatPM_aem_60QP6sf9EIfmlAmUpaD7BA" class="btn btn-dark btn-lg animate__animated animate__zoomIn animate__delay-1s">Mas informacion</a>
+        </div>
+    </section>
+
+
+    <!-- Contacto -->
+<section class="contacto" id="contacto">
+        <div class="row">
+            <!-- Formulario de Contacto -->
+            <div class="col-md-6 mx-auto">
+                <h2 class="text-center mb-4 ">Contáctanos</h2>
+                <form action="submit_form.php" method="POST" class="bg-light p-4 rounded shadow-lg">
+                    <div class="form-group">
+                        <label for="name" class="font-weight-bold">Nombre</label>
+                        <input type="text" id="name" class="form-control" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="font-weight-bold">Correo Electrónico</label>
+                        <input type="email" id="email" class="form-control" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="font-weight-bold">Mensaje</label>
+                        <textarea id="message" class="form-control" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn- btn-lg btn-block">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <!-- Mapa de Ubicación -->
+            <div class="col-md-4 mx-auto">
+                <h2 class="text-center mb-4">Visítanos</h2>
+                <!-- Código del mapa insertado aquí -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.3034510927164!2d-64.1589021349852!3d-31.433311928560336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a343b04ed439%3A0xd114ad8d2fab9265!2sWONDER%20%5BRuta%209%20(W5)%5D!5e0!3m2!1ses!2sar!4v1733790602693!5m2!1ses!2sar" 
+                    width="100%" height="370" style="border: 10px; border-radius: 20px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+</section>
+    
+    <!-- Footer -->
+    <footer class="bg-warning text-black text-center py-4">
+        <div class="container">
+            <h4>Síguenos en nuestras redes sociales</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/wonder.hamburgueseria" target="_blank" class="text-black mx-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/wonder.hamburgueseria/?hl=es" target="_blank" class="text-black mx-3">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://pedix.app/wonderhamburgueseria/sucursales" target="_blank" class="text-black mx-3">
+                    <i class="fa-sharp-duotone fa-solid fa-cart-shopping fa-2x"></i>
+                </a>
+            </div>
+            <p>© 2024 Wonder Hamburguesería. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Agregar los íconos de FontAwesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+
+
+</body>
+
+</html>
