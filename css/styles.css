@@ -175,19 +175,6 @@ header a:hover {
     color: white; /* Cambiar el color del texto principal */
 }
 
-.nosotros-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('../images/local.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: blur(3px); /* Aplica filtro gris y desenfoque */
-    z-index: -1; /* Asegura que la imagen no cubra el contenido */
-}
 
 /* Cambiar la fuente y el color del título */
 .sobre-nosotros h2 {
