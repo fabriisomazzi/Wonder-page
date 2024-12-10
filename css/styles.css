@@ -230,7 +230,7 @@ header a:hover {
     background-size: cover; /* Hace que la imagen cubra todo el área */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 55vh; /* Hace que el contenedor tenga una altura de pantalla completa (ajústalo si es necesario) */
+    height: 80%; /* Hace que el contenedor tenga una altura de pantalla completa (ajústalo si es necesario) */
     
 }
 
